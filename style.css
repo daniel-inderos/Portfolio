@@ -1,12 +1,18 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
 
 a {
     color: #007bff;
@@ -68,4 +74,13 @@ footer a:hover {
         display: block;
         margin: 10px 0;
     }
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto; /* ensures footer is pushed to the bottom */
 }
